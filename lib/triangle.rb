@@ -28,15 +28,6 @@ class Triangle
       :scalene
     end
     
-    # if ...
-    #   begin
-    #     raise PartnerError
-    #   rescue PartnerError => error  #rescue method creates instance of PartnerError 
-    #       puts error.message #and puts out the result of calling message on that inst
-    #   end
-    # else
-    # ...
-    # end
   end
     
   # Custom error class, `TriangleError`  inherits from `StandardError`:

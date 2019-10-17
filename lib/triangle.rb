@@ -32,7 +32,7 @@ class Triangle
   # Custom error class, `TriangleError`  inherits from `StandardError`:
   class TriangleError < StandardError 
     def message
-      # an invalid triangle
+      "This is an illegal triangle."
     end
   end
   

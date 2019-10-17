@@ -17,7 +17,7 @@ class Triangle
     
     raise TriangleError unless positive_length && triangle_inequality
     
-    if side_1 == side_2 == side_3 
+    if side_1 == side_2 && side_2 == side_3 
       :equilateral #equal sides
     #isosceles triangles have two sides equal
     elsif side_1 == side_2 || side_2 = side_3 || side_1 == side_3
@@ -44,6 +44,7 @@ class Triangle
     "This is an invalid triangle"
     end
   end
+  
 end
 
 

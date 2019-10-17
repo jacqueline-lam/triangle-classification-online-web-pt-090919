@@ -13,7 +13,7 @@ class Triangle
     # each side must be larger than 0
     
     positive_length = (@side_1 > 0) && (@side_2 > 0) && (@side_3 > 0)
-    triangle_inequality = (@side_1 + @side_2 > @side_3) || (@side_1 + @side_3 > @side_2) || (@side_2 + @side_3 > @side_1) 
+    triangle_inequality = (@side_1 + @side_2 > @side_3) && (@side_1 + @side_3 > @side_2) && (@side_2 + @side_3 > @side_1) 
     
     raise TriangleError unless positive_length && triangle_inequality
     

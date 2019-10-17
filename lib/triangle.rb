@@ -17,13 +17,13 @@ class Triangle
     
     raise TriangleError unless positive_length && triangle_inequality
     
-    if side_1 == side_2 && side_2 == side_3 
+    if @side_1 == @side_2 && @side_2 == @side_3 
       :equilateral #equal sides
     #isosceles triangles have two sides equal
-    elsif side_1 == side_2 || side_2 = side_3 || side_1 == side_3
+    elsif @side_1 == @side_2 || @side_2 = @side_3 || @side_1 == side_3
       :isosceles
     # scalene triangles have no equal sides
-    else if side_1 != side_2 != side_3
+    else if @side_1 != @side_2 && @side_2 != @side_3 && @side_1 != @side_3
       :scalene
     end
     

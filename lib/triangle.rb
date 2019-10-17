@@ -19,8 +19,9 @@ class Triangle
     
     if @side_1 == @side_2 && @side_2 == @side_3 
       :equilateral #equal sides
+      
     #isosceles triangles have two sides equal
-    elsif @side_1 == @side_2 || @side_2 = @side_3 || @side_1 == side_3
+    elsif @side_1 == @side_2 || @side_2 == @side_3 || @side_1 == @side_3
       :isosceles
     # scalene triangles have no equal sides
     elsif @side_1 != @side_2 && @side_2 != @side_3 && @side_1 != @side_3

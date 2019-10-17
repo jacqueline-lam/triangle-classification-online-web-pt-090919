@@ -12,6 +12,9 @@ class Triangle
     # sum of lengths of 2 sides always exceed length of third side
     # each side must be larger than 0
     
+    triangle_inequality = (@side_1+@side_2 >= @side_3) || (@side_1+@side_3 >= @side_2) || (@side_2+@side_3 >= @side_1) 
+    
+    
     if side_1 == side_2 == side_3 
       :equilateral #equal sides
     #isosceles triangles have two sides equal

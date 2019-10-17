@@ -27,13 +27,12 @@ class Triangle
     elsif @side_1 != @side_2 && @side_2 != @side_3 && @side_1 != @side_3
       :scalene
     end
-    
   end
     
   # Custom error class, `TriangleError`  inherits from `StandardError`:
   class TriangleError < StandardError 
     def message
-      p "This is an invalid triangle"
+      # an invalid triangle
     end
   end
   
